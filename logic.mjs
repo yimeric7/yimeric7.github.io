@@ -1,0 +1,1 @@
+export function jobStory({service,problem,work,result,next}){return [`${service.trim()}.`, `The situation: ${problem.trim()}`, `What we did: ${work.trim()}`, `What changed: ${result.trim()}`, next.trim()].filter(Boolean).join('\n\n').replace(/\.\./g,'.')}
